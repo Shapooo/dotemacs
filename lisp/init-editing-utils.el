@@ -18,6 +18,10 @@
  save-interprogram-paste-before-kill t
  set-mark-command-repeat-pop t
  font-lock-maximum-decoration t
+
+ ;; split windows horizontally by default¬
+ split-height-threshold nil
+ split-width-threshold 80
  )
 
 (add-hook 'after-init-hook 'global-auto-revert-mode)
@@ -61,6 +65,11 @@
 
 (global-set-key (kbd "C-.") 'set-mark-command)
 
+(when (require-package 'guide-key)
+  (setq guide-key/guide-key-sequence t)
+  (add-hook 'after-init-hook 'guide-key-mode)
+  (after-load 'guide-key
+    (diminish 'guide-key-mode)))
 
 (setq inhibit-splash-screen t)
 

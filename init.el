@@ -17,7 +17,7 @@
 (require 'init-recentf)
 (require 'init-editing-utils)
 (require 'init-themes)
-(require 'init-flycheck)
+;; (require 'init-flycheck)
 (require 'init-lisp)
 (require 'init-company)
 (require 'init-ivy)
