@@ -55,7 +55,7 @@
 
 
 ;; (add-to-list 'default-frame-alist
-;; 	     '(font . "DejaVu Sans Mono-11" ))
+;;              '(font . "DejaVu Sans Mono-11" ))
 
 
 (provide 'init-gui-frames)

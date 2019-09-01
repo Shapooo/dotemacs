@@ -1,3 +1,8 @@
+;;; init.el --- Entry of whole configuration
+;;; Commentary:
+
+;;; Code:
+
 
 ;; (defconst *is-a-windows* (eq system-type 'windows-nt))
 
@@ -17,7 +22,7 @@
 (require 'init-recentf)
 (require 'init-editing-utils)
 (require 'init-themes)
-;; (require 'init-flycheck)
+(require 'init-flycheck)
 (require 'init-lisp)
 (require 'init-company)
 (require 'init-ivy)
@@ -32,9 +37,14 @@
 (require 'init-sessions)
 (require 'init-evil)
 (require 'init-python)
+(require 'init-projectile)
+(require 'init-dired)
+(require 'init-yasnippet)
+;; (require 'init-folding)
 
-(add-to-list 'load-path "~/elpa-mirror")
-(require 'elpa-mirror)
+
+;; (add-to-list 'load-path "~/elpa-mirror")
+;; (require 'elpa-mirror)
 ;; (require 'init-locales)
 ;; (require 'init-whitespace)
 ;; (require 'init-sessions)
@@ -52,3 +62,4 @@
 
 
 (provide 'init)
+;;; init.el ends here
